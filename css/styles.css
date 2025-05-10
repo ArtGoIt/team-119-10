@@ -31,6 +31,146 @@ body {
 }
 
 .container {
+  min-width: 320px;
+  padding: 0 42px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 411px) {
+  .container {
+    width: 411px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 728px;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 1150px;
+  }
+}
+
+.clients {
+  padding: 100px 0;
+}
+
+.clients-title {
+  margin-bottom: 8px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 168%;
+  letter-spacing: 0.01em;
+  color: #22343d;
+}
+
+@media screen and (min-width: 768px) {
+  .clients-title {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .clients-title {
+    font-size: 32px;
+  }
+}
+
+.clients-text {
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #22343d;
+}
+
+@media screen and (min-width: 768px) {
+  .clients-text {
+    width: 537px;
+    margin: 0 auto;
+    margin-bottom: 36px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .clients-text {
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list {
+    display: flex;
+    gap: 15px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .clients-list {
+    gap: 64px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .clients-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.clients-item {
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  padding: 28px 26px 23px 26px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1399px) {
+  .clients-item {
+    padding: 12px 5px 24px 5px;
+  }
+}
+
+.clients-item-text {
+  margin-bottom: 16px;
+  line-height: 175%;
+  letter-spacing: 0.01em;
+  color: #737373;
+}
+
+.clients-item-inner {
+  display: flex;
+  align-items: center;
+}
+
+.clients-item-img {
+  margin-right: 14px;
+  width: 50px;
+  height: 50px;
+}
+
+.clients-item-title {
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #02897a;
+}
+
+.clients-item-desc {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.01em;
+  color: #252b42;
+}
+
+/* .container {
   width: 1150px;
   padding: 0 20px;
   margin: 0 auto;
@@ -173,4 +313,4 @@ span {
 .burger:checked + .burger-btn .burger-icon::before {
   top: 0;
   transform: rotate(45deg);
-}
+} */
